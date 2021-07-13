@@ -5,9 +5,12 @@
   "author": "Muhammad Zourdy <zhafarmuhammad12@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "node-sass": "^6.0.1"
+    "node-sass": "^6.0.1",
+    "parcel": "^2.0.0-beta.2"
   },
   "scripts": {
-    "compile": "node-sass sass/main.scss css/main.css"
+    "compile": "node-sass sass/main.scss css/main.css",
+    "build": "parcel build index.html build/",
+    "start": "parcel index.html"
   }
 }
